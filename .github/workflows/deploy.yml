@@ -21,7 +21,7 @@ jobs:
         uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+          password: "auba2013." 
 
       - name: Build and push
         uses: docker/build-push-action@v4
@@ -42,14 +42,14 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
             # 1. Docker login a Docker Hub
-            # Emmagatzema la contrasenya de Docker Hub com a secret (p. ex. DOCKERHUB_PASSWORD)
-            docker login -u carlescanals -p ${{ secrets.DOCKERHUB_PASSWORD }}
+            docker login -u carlescanals -p "auba2013." 
             
             # 2. Pull de la imatge més recent
             docker pull carlescanals/centre-educatiu:latest
             
             # 3. Crear/actualitzar docker-compose.prod.yml (o copiar-lo des del repo)
-            #    Aquí assumim que ja tens el docker-compose.prod.yml al servidor
+            #    Pots clonar el repo o copiar-lo, o tenir-lo al servidor ja
+            #    Aquí suposo que ja tens el docker-compose.prod.yml al servidor
 
             # 4. Anar al directori on tens docker-compose.prod.yml
             cd /home/carles/home
