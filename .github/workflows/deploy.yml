@@ -39,7 +39,7 @@ jobs:
         with:
           host: 139.59.169.177
           username: root
-          password: ${{ secrets.SSH_PASSWORD }}
+          password: "XD3r&RBP@8ng"
           script: |
             # 1. Docker login a Docker Hub
             docker login -u carlescanals -p ${{ secrets.DOCKERHUB_PASSWORD }}
