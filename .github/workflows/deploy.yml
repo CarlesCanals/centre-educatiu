@@ -49,7 +49,7 @@ jobs:
             
             # 3. Crear/actualitzar docker-compose.prod.yml (o copiar-lo des del repo)
             #    Pots clonar el repo o copiar-lo, o tenir-lo al servidor ja
-            #    Aquí suposo que ja tens el docker-compose.prod.yml al servidor
+            #    Aquí suposo que ja tens el docker-compose.prod.yml al servidor.
 
             # 4. Anar al directori on tens docker-compose.prod.yml
             cd /home/carles/home
