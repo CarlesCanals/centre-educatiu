@@ -55,7 +55,7 @@ jobs:
             #    Aquí suposo que ja tens el docker-compose.prod.yml al servidor
 
             # 4. Anar al directori on tens docker-compose.prod.yml
-            cd /home/carles/home
+            cd /var/www/carles/home
 
             # 5. Aturar contenidors antics i aixecar els nous
             docker-compose -f docker-compose.prod.yml down
